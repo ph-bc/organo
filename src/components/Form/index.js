@@ -5,24 +5,18 @@ import TextField from "../TextField";
 import "./Form.css";
 
 const Form = (props) => {
-  const teams = [
-    "Programação",
-    "Front-End",
-    "Data Science",
-    "DevOps",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Festão",
-  ];
-
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
   const [image, setImage] = useState("");
   const [team, setTeam] = useState("");
 
   const save = (event) => {
-    event.preventDefault();
+    event.preventDefault(); //Cancela o comportamento padrão do evento, como o envio de um formulário ou a navegação para outra página.
     props.register({ name, role, image, team });
+    setName("");
+    setRole("");
+    setImage("");
+    setTeam("");
   };
 
   return (
@@ -53,7 +47,7 @@ const Form = (props) => {
         <DropdownList
           required={true}
           label="Time"
-          items={teams}
+          items={props.teams}
           value={team}
           onChanged={(value) => setTeam(value)}
         />
