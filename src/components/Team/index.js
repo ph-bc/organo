@@ -9,9 +9,11 @@ const Team = (props) => {
         <div className="subjects">
           {props.subjects.map((subject) => (
             <Subject
+              key={subject.name}
               name={subject.name}
               role={subject.role}
-              img={subject.image}
+              image={subject.image}
+              bColor={props.pColor}
             />
           ))}
         </div>

@@ -1,5 +1,6 @@
 .subject {
   width: 280px;
+  margin-bottom: 24px;
 }
 
 .subject .header {
@@ -19,6 +20,7 @@
   border-radius: 0px 0px 10px 10px;
   padding-top: 90px;
   padding-bottom: 40px;
+  flex-direction: column;
 }
 
 .subject .footer h4 {
