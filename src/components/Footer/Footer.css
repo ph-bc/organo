@@ -1,4 +1,4 @@
-.footer {
+footer.footer {
   background: #6278f7;
   color: #fff;
   padding: 80px;
@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-.footer ul li {
+footer.footer ul li {
   display: inline-block;
   margin-right: 32px;
 }
 
-.footer ul li:last-child {
+footer.footer ul li:last-child {
   margin-right: 0;
 }

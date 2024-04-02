@@ -1,16 +1,36 @@
-import { FaCircleXmark } from "react-icons/fa6";
+import { FaCircleXmark, FaStar, FaRegStar } from "react-icons/fa6";
 import "./Subject.css";
 
-const Subject = ({ subject, color, onDel }) => {
+const Subject = ({ subject, color, onDel, onFavorite }) => {
+  const idFavorite = () => {
+    onFavorite(subject.id);
+  };
+
+  const fav = {
+    size: 25,
+    onClick: idFavorite,
+  };
+
   return (
     <div className="subject">
-      <FaCircleXmark size={25} className="delete" onClick={() => onDel(subject.id)} />
+      <FaCircleXmark
+        size={25}
+        className="delete"
+        onClick={() => onDel(subject.id)}
+      />
       <div className="header" style={{ backgroundColor: color }}>
         <img src={subject.image} alt={subject.name} />
       </div>
       <div className="footer">
         <h4 style={{ color: color }}>{subject.name}</h4>
         <h5>{subject.role}</h5>
+        <div className="favorite">
+          {subject.favorite ? (
+            <FaStar {...fav} color="#FFFF00" />
+          ) : (
+            <FaRegStar {...fav} />
+          )}
+        </div>
       </div>
     </div>
   );

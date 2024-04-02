@@ -2,7 +2,7 @@ import hexToRgba from "hex-to-rgba";
 import Subject from "../Subject";
 import "./Team.css";
 
-const Team = ({ team, subjects, changeColor, onDel }) => {
+const Team = ({ team, subjects, changeColor, onDel, onFavorite }) => {
   return (
     subjects.length > 0 && (
       <section
@@ -27,6 +27,7 @@ const Team = ({ team, subjects, changeColor, onDel }) => {
                 subject={subject}
                 color={team.color}
                 onDel={onDel}
+                onFavorite={onFavorite}
               />
             );
           })}

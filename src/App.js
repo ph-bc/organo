@@ -24,6 +24,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       team: teams[0].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -32,6 +33,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       team: teams[0].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -40,6 +42,7 @@ function App() {
       image:
         "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       team: teams[0].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -48,6 +51,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       team: teams[0].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -56,6 +60,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       team: teams[1].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -64,6 +69,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       team: teams[1].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -72,6 +78,7 @@ function App() {
       image:
         "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       team: teams[1].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -80,6 +87,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       team: teams[1].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -88,6 +96,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       team: teams[2].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -96,6 +105,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       team: teams[2].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -104,6 +114,7 @@ function App() {
       image:
         "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       team: teams[2].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -112,6 +123,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       team: teams[2].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -120,6 +132,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       team: teams[3].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -128,6 +141,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       team: teams[3].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -136,6 +150,7 @@ function App() {
       image:
         "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       team: teams[3].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -144,6 +159,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       team: teams[3].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -152,6 +168,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       team: teams[4].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -160,6 +177,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       team: teams[4].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -168,6 +186,7 @@ function App() {
       image:
         "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       team: teams[4].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -176,6 +195,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       team: teams[4].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -184,6 +204,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       team: teams[5].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -192,6 +213,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       team: teams[5].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -200,6 +222,7 @@ function App() {
       image:
         "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       team: teams[5].name,
+      favorite: false,
     },
     {
       id: uuidv4(),
@@ -208,6 +231,7 @@ function App() {
       image:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       team: teams[5].name,
+      favorite: false,
     },
   ];
 
@@ -215,6 +239,25 @@ function App() {
 
   const delSubject = (id) => {
     setSubjects(subjects.filter((subject) => subject.id !== id));
+  };
+
+  const favoriteSystem = (id) => {
+    setSubjects(
+      subjects.map((subject) => {
+        if (subject.id === id) {
+          subject.favorite = !subject.favorite;
+        }
+        return subject;
+      })
+    );
+  };
+
+  const subjectRegister = (newSubject) => {
+    setSubjects([...subjects, { ...newSubject, id: uuidv4() }]);
+  };
+
+  const teamRegister = (newTeam) => {
+    setTeams([...teams, { ...newTeam, id: uuidv4() }]);
   };
 
   const changeTeamColor = (color, id) => {
@@ -229,17 +272,13 @@ function App() {
     );
   };
 
-  const teamRegister = (newTeam) => {
-    setTeams([...teams, { ...newTeam, id: uuidv4() }]);
-  };
-
   return (
     <div className="App">
       <Banner />
 
       <Form
         teams={teams.map((team) => team.name)}
-        register={(subject) => setSubjects([...subjects, subject])} //O operador spread (...) é usado para criar uma cópia do array original
+        subjectRegister={subjectRegister}
         teamRegister={teamRegister}
       />
 
@@ -252,6 +291,7 @@ function App() {
             changeColor={changeTeamColor}
             subjects={subjects.filter((subject) => subject.team === team.name)} // Cria um novo array com todos os elementos que passam no teste
             onDel={delSubject}
+            onFavorite={favoriteSystem}
           />
         ))}
       </section>

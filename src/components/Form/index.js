@@ -1,14 +1,15 @@
 import { useState } from "react";
 import Button from "../Button";
 import DropdownList from "../DropdownList";
-import TextField from "../TextField";
+import Field from "../Field";
 import "./Form.css";
 
-const Form = ({ teams, register, teamRegister }) => {
+const Form = ({ teams, subjectRegister, teamRegister }) => {
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
   const [image, setImage] = useState("");
   const [team, setTeam] = useState("");
+
   const [teamName, setTeamName] = useState("");
   const [color, setColor] = useState("");
 
@@ -17,7 +18,7 @@ const Form = ({ teams, register, teamRegister }) => {
       <form
         onSubmit={(event) => {
           event.preventDefault(); //Cancela o comportamento padrão do evento, como o envio de um formulário ou a navegação para outra página.
-          register({ name, role, image, team });
+          subjectRegister({ name, role, image, team });
           setName("");
           setRole("");
           setImage("");
@@ -25,21 +26,21 @@ const Form = ({ teams, register, teamRegister }) => {
         }}
       >
         <h2>Preencha os dados para criar o card do colaborador:</h2>
-        <TextField
+        <Field
           required
           label="Nome"
           placeholder="Digite seu nome"
           value={name}
           onChanged={(value) => setName(value)}
         />
-        <TextField
+        <Field
           required
           label="Cargo"
           placeholder="Digite seu cargo"
           value={role}
           onChanged={(value) => setRole(value)}
         />
-        <TextField
+        <Field
           required={false}
           label="Imagem"
           placeholder="Digite o endereço da imagem"
@@ -65,16 +66,17 @@ const Form = ({ teams, register, teamRegister }) => {
         }}
       >
         <h2>Preencha os dados para criar um novo time:</h2>
-        <TextField
+        <Field
           required
           label="Nome"
           placeholder="Digite o nome do time"
           value={teamName}
           onChanged={(value) => setTeamName(value)}
         />
-        <TextField
+        <Field
           required
           label="Cor"
+          type="color"
           placeholder="Digite a cor do time"
           value={color}
           onChanged={(value) => setColor(value)}
