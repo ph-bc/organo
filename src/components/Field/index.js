@@ -1,6 +1,13 @@
 import "./Field.css";
 
-const Field = ({ required, label, type = 'text', placeholder, value, onChanged }) => {
+const Field = ({
+  required,
+  label,
+  type = "text",
+  placeholder,
+  value,
+  onChanged,
+}) => {
   const typing = (event) => {
     onChanged(event.target.value);
   };

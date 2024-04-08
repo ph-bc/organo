@@ -17,3 +17,10 @@
   -o-border-radius: 20px;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
+
+.form img {
+  display: block;
+  margin-top: 24px;
+  width: 128px;
+  height: 128px;
+}

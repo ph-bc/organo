@@ -13,11 +13,25 @@ const Form = ({ teams, subjectRegister, teamRegister }) => {
   const [teamName, setTeamName] = useState("");
   const [color, setColor] = useState("");
 
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0]; // Obtém o primeiro arquivo selecionado pelo usuário
+    if (file) {
+      // Se um arquivo foi selecionado
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        // Quando a leitura do arquivo for concluída
+        setImage(e.target.result); // Define a imagem como base64
+      };
+      console.log(file);
+      reader.readAsDataURL(file); // Lê o arquivo como URL de dados
+    }
+  };
+
   return (
     <section className="form">
       <form
         onSubmit={(event) => {
-          event.preventDefault(); //Cancela o comportamento padrão do evento, como o envio de um formulário ou a navegação para outra página.
+          event.preventDefault();
           subjectRegister({ name, role, image, team });
           setName("");
           setRole("");
@@ -40,13 +54,17 @@ const Form = ({ teams, subjectRegister, teamRegister }) => {
           value={role}
           onChanged={(value) => setRole(value)}
         />
-        <Field
-          required={false}
-          label="Imagem"
-          placeholder="Digite o endereço da imagem"
-          value={image}
-          onChanged={(value) => setImage(value)}
+
+        <label>Imagem</label>
+        <input
+          required
+          type="file"
+          accept="image/*"
+          onChange={handleImageUpload}
         />
+
+        {image && <img src={image} alt="Imagem do colaborador" />}
+
         <DropdownList
           required
           label="Time"
