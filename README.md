@@ -23,7 +23,7 @@ To get started with Organo on your local machine, follow these simple steps:
 1. Clone the repository.
 
    ```bash
-   git clone https://github.com/your-username/organo.git
+   git clone https://github.com/ph-bc/organo.git
     ```
 
 2. Install dependencies.
