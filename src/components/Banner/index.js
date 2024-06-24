@@ -3,10 +3,7 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <header className="banner">
-      <img
-        src="/images/banner.png"
-        alt="banner principal da Página do Organo"
-      ></img>
+      <img src="/images/banner.png" alt="Banner principal da página"></img>
     </header>
   );
 };
